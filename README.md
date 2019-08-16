@@ -72,4 +72,9 @@ let g:indentLine_char = '▏'
 ## .tmux.conf
 `````
 set -g status-right %H:%M
-
+``````
+## .bash_profile
+`````
+# para quitar username y eso
+export PS1="\W \$ "
+`````
