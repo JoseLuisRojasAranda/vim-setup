@@ -4,6 +4,9 @@
 ````vim
 " Pa que se vean los numeros en las lineas
 set nu
+set tabstop=4
+" Para que se vea mejor el markdown
+set linebreak
 " para que funcione clipboard
 set clipboard=unnamed
 
@@ -28,6 +31,9 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-python/python-syntax'
+" Para el markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,6 +49,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
 
 :au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -62,3 +69,7 @@ colorscheme gotham
 " let g:indentLine_setColors = 0
 let g:indentLine_char = '▏'
 ````
+## .tmux.conf
+`````
+set -g status-right %H:%M
+
