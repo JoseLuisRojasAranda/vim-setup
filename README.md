@@ -5,6 +5,7 @@
 " Pa que se vean los numeros en las lineas
 set nu
 set tabstop=4
+set backspace=indent,eol,start
 " Para que se vea mejor el markdown
 set linebreak
 " para que funcione clipboard
